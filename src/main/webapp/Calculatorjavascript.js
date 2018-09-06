@@ -2,7 +2,7 @@
 function clearWindow() {
 
     document.getElementById("display").innerHTML = "";
-}
+};
 
 
 
@@ -18,50 +18,40 @@ const buttons = document.getElementById("buttons");
 var numbers;
 var result;
 var resultet;
-var lastClick;
+var lastClick = "0";
 
 buttons.onclick = function (e) {
 
 
 //
 //    console.log(e.target);
+    //
+//    console.log(e.target);
     resultet = document.getElementById("display").innerHTML;
     var number = e.target.innerText;
     if (number.match(/^\d+$/)) {
-        
         document.getElementById("display").innerHTML += number;
-         lastClick = number;
     } else {
         if (number === "=") {
-            if(!lastClick.match(/^\d+$/)){
+            if (!lastClick.match(/^\d+$/)) {
                 alert("du skal skrive et tal til sidst!");
                 return;
             }
 
-        document.getElementById("display").innerHTML += number;
-    } else {
-        if (number === "=") {
-
-
             result = eval(resultet);
             document.getElementById("display").innerHTML = result;
-            
+
 
         } else {
-            
-            if(number.length > 1 ){
-                
+            if (number.length > 1) {
+
                 number = "";
             }
             document.getElementById("display").innerHTML += number;
-
-            lastClick = number;
-
-
         }
         //document.getElementById("display").innerHTML += number;
     }
-
+};
 
 //    numbersArrays = document.getElementById("display").innerHTML.split(/[+,\-,*,\/]/);
 //    console.log(numbersArrays);
@@ -98,6 +88,5 @@ buttons.onclick = function (e) {
 
 
 
-};
 
 
