@@ -38,6 +38,11 @@ buttons.onclick = function (e) {
                 return;
             }
 
+        document.getElementById("display").innerHTML += number;
+    } else {
+        if (number === "=") {
+
+
             result = eval(resultet);
             document.getElementById("display").innerHTML = result;
             
@@ -49,7 +54,10 @@ buttons.onclick = function (e) {
                 number = "";
             }
             document.getElementById("display").innerHTML += number;
+
             lastClick = number;
+
+
         }
         //document.getElementById("display").innerHTML += number;
     }
