@@ -34,9 +34,14 @@ buttons.onclick = function (e) {
 
             result = eval(resultet);
             document.getElementById("display").innerHTML = result;
+            
 
         } else {
-
+            
+            if(number.length > 1 ){
+                
+                number = "";
+            }
             document.getElementById("display").innerHTML += number;
         }
         //document.getElementById("display").innerHTML += number;

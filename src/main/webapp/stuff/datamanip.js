@@ -45,9 +45,9 @@ $.get(homepage, function(response) {
   // console.log(response);
       
     var name = JSON.stringify("name: "+response.name);
-    document.getElementById("name").textContent = name;    
+    document.getElementById("name").textContent = name +"<br>";    
     var phone = JSON.stringify("phone: "+response.phone);
-    document.getElementById("phone").textContent = phone;
+    document.getElementById("phone").textContent = phone+"<br>";
  /*
    var myJSON = JSON.stringify(response);
    document.getElementById("userInfo").innerHTML = myJSON;

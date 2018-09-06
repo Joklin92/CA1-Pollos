@@ -157,12 +157,12 @@ function removeLast(){
 
 //Removes first element from EVERY list after they are sorted
 document.getElementById("first").onclick = function(e){
-    var sortedNames = all.sort(sortingOrder);
+    /*var sortedNames = all.sort(sortingOrder);
     var sortedBoys = boys.sort(sortingOrder);
     var sortedGirls = girls.sort(sortingOrder);
     console.log(sortedNames);
     console.log(sortedBoys);
-    console.log(sortedGirls);
+    console.log(sortedGirls);*/
 
     console.log("Removing first element after this");
     all.shift();
@@ -178,15 +178,15 @@ document.getElementById("first").onclick = function(e){
 };
 
 document.getElementById("last").onclick = function(e){
-    var sortedNames = all.sort(sortingOrder);
+    /*var sortedNames = all.sort(sortingOrder);
     var sortedBoys = boys.sort(sortingOrder);
     var sortedGirls = girls.sort(sortingOrder);
     
     console.log(sortedNames);
     console.log(sortedBoys);
-    console.log(sortedGirls);
-
-    console.log("Removing first element after this");
+    console.log(sortedGirls);*/
+    
+    console.log("Removing last element after this");
     all.pop();
     boys.pop();
     girls.pop();

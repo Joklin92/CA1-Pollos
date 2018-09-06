@@ -76,6 +76,7 @@ function reset() {
 	interval = null;
 	timer = [0,0,0,0];
 	timerRunning = false;
+	window.location.reload(true);
 	document.getElementById("origin-text").innerText = randomizer(testText.length);
 	testArea.value = "";
 	theTimer.innerHTML = "00:00:00";
