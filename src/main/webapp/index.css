@@ -80,6 +80,7 @@ body {
 
 #canvas {
 float: right;
+margin: 0 auto;
 }
 
 h1 {    
